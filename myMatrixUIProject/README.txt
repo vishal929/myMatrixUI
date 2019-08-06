@@ -16,13 +16,13 @@ How To Run My UI:
 	2) Navigate to the myMatrixUIProject folder in terminal/cmd
 	3) We will first compile the program
 	   mac/linux:javac --module-path $Path_FX --add-modules javafx.controls,javafx.fxml Controllers/*.java Library/*.java myMatrixUI.java -d Class 
-	   windows: javac --module-path %Path_FX --add-modules javafx.controls,javafx.fxml Controllers\*.java Library\*.java myMatrixUI.java -d Class
+	   windows: javac --module-path %Path_FX% --add-modules javafx.controls,javafx.fxml Controllers\*.java Library\*.java myMatrixUI.java -d Class
 
            This will compile the java components and store the class files in the Class folder
 
 	4)Running the program
 	  mac/linux: java --module-path $Path_FX --add-modules javafx.controls,javafx.fxml -cp Class myMatrixUI
-          windows: java --module-path %Path_FX --add-modules javafx.controls,javafx.fxml -cp Class myMatrixUI
+          windows: java --module-path %Path_FX% --add-modules javafx.controls,javafx.fxml -cp Class myMatrixUI
 
 What The Program Does:
 	1) This is just a very basic UI for the library I created (myMatrix.java).
