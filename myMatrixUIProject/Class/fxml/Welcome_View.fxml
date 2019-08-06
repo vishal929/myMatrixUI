@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Welcome_Controller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ChoiceBox id="choices" fx:id="choices" layoutX="233.0" layoutY="212.0" prefWidth="150.0" />
+            <Text layoutX="177.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!" AnchorPane.bottomAnchor="298.736328125" AnchorPane.leftAnchor="177.0" AnchorPane.rightAnchor="161.248046875" AnchorPane.topAnchor="40.732421875">
+               <font>
+                  <Font size="52.0" />
+               </font>
+            </Text>
+            <Text id="welcome" fx:id="welcome" layoutX="155.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Pick an Operation Below:">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Button id="op_submit" fx:id="op_submit" layoutX="282.0" layoutY="295.0" mnemonicParsing="false" onAction="#select_op" text="Enter" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="282.0" AnchorPane.rightAnchor="265.0" AnchorPane.topAnchor="295.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

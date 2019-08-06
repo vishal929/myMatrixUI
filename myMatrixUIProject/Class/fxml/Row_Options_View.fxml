@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Row_Options_Controller">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="title_text" layoutX="97.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set top Text Based on Operation">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="pick_first_text" layoutX="35.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick First Row\Column">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="pick_second_text" layoutX="35.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick Second Row/Column">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="first_field" layoutX="378.0" layoutY="87.0" />
+                  <TextField fx:id="second_field" layoutX="378.0" layoutY="144.0" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="multiplier_text" layoutX="33.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select A Multiplier">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="multiplier_field" layoutX="378.0" layoutY="38.0" />
+                  <Button fx:id="submit_button" layoutX="269.0" layoutY="147.0" mnemonicParsing="false" onAction="#enter_options" text="Submit" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
