@@ -11,9 +11,9 @@ Explanation of Components:
 
 
 How To Run My UI:
-	1) Make sure you have JavaFX installed and have assigned it an environment path 
+	1) Make sure you have the latest JavaFX installed and have assigned it an environment path 
 		variable (for my explanation we will call it $Path_FX)
-	2) Navigate to the myMatrixUIProject folder in terminal/cmd
+	2) Navigate to the myMatrixUIProject folder in terminal/cmd so that myMatrixUI.java is reachable and so you can 		access the directories "Controllers", "Library", and "Class"
 	3) We will first compile the program
 	   mac/linux:javac --module-path $Path_FX --add-modules javafx.controls,javafx.fxml Controllers/*.java Library/*.java myMatrixUI.java -d Class 
 	   windows: javac --module-path %Path_FX% --add-modules javafx.controls,javafx.fxml Controllers\*.java Library\*.java myMatrixUI.java -d Class
