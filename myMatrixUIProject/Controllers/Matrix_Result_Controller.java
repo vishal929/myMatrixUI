@@ -73,8 +73,6 @@ public class Matrix_Result_Controller {
 		Platform.runLater(() ->{
 			//if operation is get inverse and we come up with null
 			//then no inverse exists
-			this.saved.print(3);
-			//prints numbers with 3 decimal places for the user``
 			if (this.saved==null) {
 				Text no_inverse = new Text("No Inverse Exists!");
 				no_inverse.setEditable(false);
