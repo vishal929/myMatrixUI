@@ -77,6 +77,7 @@ public class Matrix_Result_Controller {
 			//prints numbers with 3 decimal places for the user``
 			if (this.saved==null) {
 				Text no_inverse = new Text("No Inverse Exists!");
+				no_inverse.setEditable(false);
 				matrix.add(no_inverse,0,0);
 				copy_entries.setText("No Inverse Exists!");
 				copy_entries.setEditable(false);
